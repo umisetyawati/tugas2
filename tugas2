@@ -1,0 +1,39 @@
+#include <stdio.h>
+main()
+{
+float s, r, t, hasil;
+int jenis;
+char back;
+printf("\t\t\tProgram untuk menghitung\n\n");
+printf("Pilih program yang anda inginkan: \n");
+printf("1. Menghitung volume kubus\n");
+printf("2. Menghitung luas lingkaran\n");
+printf("3. Menghitung volume silinder\n");
+printf("Masukkan pilihan anda : ");
+scanf("%d", &jenis);
+    switch(jenis)
+    {
+    case 1:
+        printf("Masukkan panjang sisi kubus : ");
+        scanf("%f", &s);
+        hasil=s*s*s;
+        printf("Volume kubus : %2.2f cm3\n", hasil);
+        break;
+    case 2:
+        printf("Masukkan panjang jari-jari lingkaran : ");
+        scanf("%f", &r);
+        hasil=3.14*r*r;
+        printf("Luas lingkaran : %2.2f cm2\n", hasil);
+        break;
+    case 3:
+        printf("Masukkan panjang jari-jari lingkaran : ");
+        scanf("%f", &r);
+        printf("Masukkan tinggi silinder : ");
+        scanf("%f", &t);
+        hasil=3.14*r*r*t;
+        printf("Volume silinder : %2.2f cm3\n", hasil);
+        break;
+    default:
+    printf("MAAF KODE YANG ANDA MASUKKAN SALAH\n");
+    }
+}
